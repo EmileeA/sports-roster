@@ -10,7 +10,7 @@ class NavBar extends React.Component {
           <a class="narbar-brand" href="#">
             <img src="http://www.pacificcrestcomedy.com/uploads/1/2/4/4/124445660/pccf-logo-full-color-v2-texture-1_orig.png" alt="logo" />
           </a>
-          <button className="btn btn-outline-info">Log In</button>
+          <button className="btn btn-info">Log In</button>
           </nav>
       </div>
     );
