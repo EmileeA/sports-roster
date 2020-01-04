@@ -12,7 +12,7 @@ class NavBar extends React.Component {
   }
 
   logMeOut = (e) => {
-    e.preventDefautl();
+    e.preventDefault();
     firebase.auth().signOut();
   }
 

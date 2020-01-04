@@ -3,7 +3,7 @@ import apiKeys from '../apiKeys.json';
 
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
-const getComedianByUid = (uid) => new Promise((resolve, reject) => {
+const getComediansByUid = (uid) => new Promise((resolve, reject) => {
   axios.get(`${baseUrl}/comedians.json?orderBy="uid"&equalTo="${uid}"`)
     .then((result) => {
       const allComediansObj = result.data;
@@ -22,4 +22,4 @@ const getComedianByUid = (uid) => new Promise((resolve, reject) => {
     });
 });
 
-export default { getComedianByUid };
+export default { getComediansByUid };

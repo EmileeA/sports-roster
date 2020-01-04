@@ -6,7 +6,7 @@ import SingleComedian from '../SingleComedian/SingleComedian';
 
 class ComedianLineup extends React.Component {
   state = {
-    players: [],
+    comedians: [],
   }
 
   componentDidMount() {

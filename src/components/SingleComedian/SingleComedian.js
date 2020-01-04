@@ -1,5 +1,4 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import comedianShape from '../../helpers/propz/comedianShape';
 import './SingleComedian.scss';
 
