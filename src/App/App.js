@@ -7,19 +7,8 @@ import firebaseConnection from '../helpers/data/connection';
 import './App.scss';
 import NavBar from '../components/NavBar/NavBar.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ComedianLineup from '../components/ComedianLineup/ComedianLineup';
 
-// import logo from '../../images/logo.png';
-
-// function App() {
-//   return (
-//     <div className="App"><NavBar />
-//     <div className="authContainer">
-//       <img className="logo" src="http://www.pacificcrestcomedy.com/uploads/1/2/4/4/124445660/pccf-logo-full-color-v2-texture-1_orig.png" />
-
-//       </div>
-//     </div>
-//   );
-// }
 firebaseConnection();
 
 class App extends React.Component {
@@ -46,7 +35,9 @@ class App extends React.Component {
     return (
       <div className="App"><NavBar authed={authed} />
       <div className="authContainer">
-        <img className="logo" src="http://www.pacificcrestcomedy.com/uploads/1/2/4/4/124445660/pccf-logo-full-color-v2-texture-1_orig.png" />
+         {
+      (authed) ? (<ComedianLineup />) : (<img className="logo" src="https://raw.githubusercontent.com/EmileeA/sports-roster/master/images/logo.png" />)
+    }
       </div>
       </div>
     );

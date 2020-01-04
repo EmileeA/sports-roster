@@ -29,9 +29,9 @@ class NavBar extends React.Component {
   render() {
     return (
       <div className="NavBar">
-        <nav class="navbar navbar-light bg-light">
-          <a class="narbar-brand" href="#">
-            <img src="http://www.pacificcrestcomedy.com/uploads/1/2/4/4/124445660/pccf-logo-full-color-v2-texture-1_orig.png" alt="logo" />
+        <nav className="navbar navbar-light bg-light">
+          <a className="narbar-brand" href="#">
+            <img src="https://raw.githubusercontent.com/EmileeA/sports-roster/master/images/logo.png" alt="logo" />
           </a>
           {this.buttonSwap()}
           </nav>
