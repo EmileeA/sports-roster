@@ -1,0 +1,74 @@
+{
+  "comedian1": {
+    "imageUrl": "https://raw.githubusercontent.com/EmileeA/sports-roster/master/images/bargatze.jpg",
+    "name": "Nate Bargatze",
+    "position": "First",
+    "uid": "c4ffK2rxuEVNSVUTP2q7fOALLIJ2"
+    },
+  "comedian2": {
+    "imageUrl": "https://raw.githubusercontent.com/EmileeA/sports-roster/master/images/birbiglia.jpg",
+    "name": "Mike Birbiglia",
+    "position": "Second",
+    "uid": "c4ffK2rxuEVNSVUTP2q7fOALLIJ2"
+    },
+  "comedian3": {
+    "imageUrl": "https://raw.githubusercontent.com/EmileeA/sports-roster/master/images/brennan.jpg",
+    "name": "Neal Brennan",
+    "position": "Third",
+    "uid": "c4ffK2rxuEVNSVUTP2q7fOALLIJ2"
+    },
+  "comedian4": {
+    "imageUrl": "https://raw.githubusercontent.com/EmileeA/sports-roster/master/images/burress.jpg",
+    "name": "Hannibal Burress",
+    "position": "Fourth",
+    "uid": "c4ffK2rxuEVNSVUTP2q7fOALLIJ2"
+    },
+  "comedian5": {
+    "imageUrl": "https://raw.githubusercontent.com/EmileeA/sports-roster/master/images/chappelle.jpg",
+    "name": "Dave Chappelle",
+    "position": "Fifth",
+    "uid": "c4ffK2rxuEVNSVUTP2q7fOALLIJ2"
+    },
+  "comedian6": {
+    "imageUrl": "https://raw.githubusercontent.com/EmileeA/sports-roster/master/images/fey.jpg",
+    "name": "Tina Fey",
+    "position": "Six",
+    "uid": "c4ffK2rxuEVNSVUTP2q7fOALLIJ2"
+    },
+  "comedian7": {
+    "imageUrl": "https://raw.githubusercontent.com/EmileeA/sports-roster/master/images/hedberg.jpg",
+    "name": "Mitch Hedberg",
+    "position": "Seventh",
+    "uid": "c4ffK2rxuEVNSVUTP2q7fOALLIJ2"
+    },
+  "comedian8": {
+    "imageUrl": "https://raw.githubusercontent.com/EmileeA/sports-roster/master/images/kinane.jpg",
+    "name": "Kyle Kinane",
+    "position": "Eighth",
+    "uid": "c4ffK2rxuEVNSVUTP2q7fOALLIJ2"
+    },
+  "comedian9": {
+    "imageUrl": "https://raw.githubusercontent.com/EmileeA/sports-roster/master/images/pheobe.jpg",
+    "name": "Pheobe Waller-Bridge",
+    "position": "Ninth",
+    "uid": "c4ffK2rxuEVNSVUTP2q7fOALLIJ2"
+    },
+  "comedian10": {
+    "imageUrl": "https://raw.githubusercontent.com/EmileeA/sports-roster/master/images/rudolph.png",
+    "name": "Maya Rudolph",
+    "position": "Tenth",
+    "uid": "c4ffK2rxuEVNSVUTP2q7fOALLIJ2"
+    },
+  "comedian11": {
+    "imageUrl": "https://raw.githubusercontent.com/EmileeA/sports-roster/master/images/segura.jpg",
+    "name": "Tom Segura",
+    "position": "Eleventh",
+    "uid": "c4ffK2rxuEVNSVUTP2q7fOALLIJ2"
+    },
+  "comedian12": {
+    "imageUrl": "https://raw.githubusercontent.com/EmileeA/sports-roster/master/images/williams.jpg",
+    "name": "Robin Williams",
+    "position": "Twelfth",
+    "uid": "c4ffK2rxuEVNSVUTP2q7fOALLIJ2"
+    }
+  }
