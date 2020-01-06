@@ -22,4 +22,6 @@ const getComediansByUid = (uid) => new Promise((resolve, reject) => {
     });
 });
 
-export default { getComediansByUid };
+const saveComedian = (comedianInfo) => axios.post(`${baseUrl}/comedians.json`, comedianInfo);
+
+export default { getComediansByUid, saveComedian };
