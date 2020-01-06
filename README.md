@@ -13,9 +13,16 @@ This "Sports Roster" is for managing talent for the your comedy festival. You ca
 
 ## Screenshots
 Display on page load:
+![on load](https://raw.githubusercontent.com/EmileeA/sports-roster/master/screenshots/DisplayOnLoad.png)
+
 Display on log in:
+![on load](https://raw.githubusercontent.com/EmileeA/sports-roster/master/screenshots/DisplayOnLogin.png)
+
 Add comedian:
+![on load](https://raw.githubusercontent.com/EmileeA/sports-roster/master/screenshots/AddComedian.png)
+
 Edit comedian:
+![on load](https://raw.githubusercontent.com/EmileeA/sports-roster/master/screenshots/UpdateComedian.png)
 
 ## Instructions for how to run the project
 
