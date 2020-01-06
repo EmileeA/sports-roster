@@ -24,4 +24,6 @@ const getComediansByUid = (uid) => new Promise((resolve, reject) => {
 
 const saveComedian = (comedianInfo) => axios.post(`${baseUrl}/comedians.json`, comedianInfo);
 
-export default { getComediansByUid, saveComedian };
+const updateComedian = (comedianId, newComedianInfo) => axios.put(`${baseUrl}/comedians/${comedianId}.json`, newComedianInfo);
+
+export default { getComediansByUid, saveComedian, updateComedian };
