@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import './ComedianForm.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -113,9 +114,9 @@ render() {
       </form>
       <div className="justify-content-around row d-flex">
           {
-            (editMode) ? (<button className="btn btn-dark" onClick= {this.updateComedianEvent}>Update</button>) : (<button className="btn btn-dark" onClick= {this.saveComedianEvent}>Save</button>)
+            (editMode) ? (<button className="btn btn-outline-light" onClick= {this.updateComedianEvent}>Update</button>) : (<button className="btn btn-outline-light" onClick= {this.saveComedianEvent}>Save</button>)
           }
-        <button className="btn btn-dark" onClick={this.props.closeForm}>Close</button>
+        <button className="btn btn-outline-light" onClick={this.props.closeForm}>Close</button>
         </div>
       </div>
     </div>
