@@ -1,18 +1,47 @@
 import './ComedianForm.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
+import comedianShape from '../../helpers/propz/comedianShape';
 import authData from '../../helpers/data/authData';
 
 class ComedianForm extends React.Component {
   static propTypes = {
     addComedian: PropTypes.func,
     closeForm: PropTypes.func,
+    comedianToEdit: comedianShape.comedianShape,
+    editMode: PropTypes.bool,
+    updateComedian: PropTypes.func,
   }
 
   state = {
     comedianName: '',
     comedianPosition: '',
     comedianImg: '',
+  }
+
+  componentDidMount() {
+    const { comedianToEdit, editMode } = this.props;
+    if (editMode) {
+      this.setState({ comedianName: comedianToEdit.name, comedianPosition: comedianToEdit.position, comedianImg: comedianToEdit.imageUrl });
+    }
+  }
+
+  componentDidUpdate(prevProps) {
+    if ((prevProps.comedianToEdit.id !== this.props.comedianToEdit.id) && this.props.editMode) {
+      this.setState({ comedianName: this.props.comedianToEdit.name, comedianPosition: this.props.comedianToEdit.position, comedianImg: this.props.comedianToEdit.imageUrl });
+    }
+  }
+
+  updateComedianEvent = (e) => {
+    e.preventDefault();
+    const { updateComedian, comedianToEdit } = this.props;
+    const updatedComedian = {
+      name: this.state.comedianName,
+      position: this.state.comedianPosition,
+      imageUrl: this.state.comedianImg,
+      uid: authData.getUid(),
+    };
+    updateComedian(comedianToEdit.id, updatedComedian);
   }
 
   saveComedianEvent = (e) => {
@@ -43,6 +72,7 @@ imgChange = (e) => {
 }
 
 render() {
+  const { editMode } = this.props;
   return (
     <div className='popup'>
       <div className='inner'>
@@ -81,8 +111,10 @@ render() {
         />
       </div>
       </form>
-        <div className="justify-content-around row d-flex"><button className="btn btn-dark" onClick=
-        {this.saveComedianEvent}>Save</button>
+      <div className="justify-content-around row d-flex">
+          {
+            (editMode) ? (<button className="btn btn-dark" onClick= {this.updateComedianEvent}>Update</button>) : (<button className="btn btn-dark" onClick= {this.saveComedianEvent}>Save</button>)
+          }
         <button className="btn btn-dark" onClick={this.props.closeForm}>Close</button>
         </div>
       </div>
