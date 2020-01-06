@@ -37,8 +37,8 @@ class SingleComedian extends React.Component {
       </div>
       <div className="card-footer">
         <div className="card-footer d-flex justify-content-around">
-        <button className="btn btn-outline-info" onClick={this.deleteComedianEvent}>Delete</button>
-        <button className="btn btn-outline-info" onClick={this.setEditMode}>Edit</button>
+        <button className="btn btn-outline-info" onClick={this.deleteComedianEvent}>Remove</button>
+        <button className="btn btn-outline-info" onClick={this.setEditMode}>Update</button>
       </div>
     </div>
     </div>
