@@ -8,6 +8,7 @@ class SingleComedian extends React.Component {
     comedian: comedianShape.comedianShape,
     setEditMode: PropTypes.func,
     setComedianToEdit: PropTypes.func,
+    deleteComedian: PropTypes.func,
   }
 
   setEditMode = (e) => {
@@ -15,6 +16,12 @@ class SingleComedian extends React.Component {
     e.preventDefault();
     setEditMode(true);
     setComedianToEdit(comedian);
+  }
+
+  deleteComedianEvent = (e) => {
+    e.preventDefault();
+    const { deleteComedian, comedian } = this.props;
+    deleteComedian(comedian.id);
   }
 
   render() {
@@ -29,8 +36,11 @@ class SingleComedian extends React.Component {
         <p className="card-text">Position: {comedian.position}</p>
       </div>
       <div className="card-footer">
+        <div className="card-footer d-flex justify-content-around">
+        <button className="btn btn-outline-info" onClick={this.deleteComedianEvent}>Delete</button>
         <button className="btn btn-outline-info" onClick={this.setEditMode}>Edit</button>
       </div>
+    </div>
     </div>
     </div>
     );

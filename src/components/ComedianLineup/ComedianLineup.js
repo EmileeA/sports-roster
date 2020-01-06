@@ -44,6 +44,14 @@ class ComedianLineup extends React.Component {
       .catch((error) => console.error(error));
   }
 
+  deleteComedian = (comedianId) => {
+    comedianData.deleteComedian(comedianId)
+      .then(() => {
+        this.getComedians();
+      })
+      .catch((error) => console.error(error));
+  }
+
   setEditMode = (editMode) => {
     this.setState({ editMode, showComedianForm: true });
   }
@@ -68,7 +76,7 @@ class ComedianLineup extends React.Component {
       <div>
         <button className="btn btn-info m-2" onClick={this.setShowComedianForm}>Add New Comedian</button>
         { this.state.showComedianForm && <ComedianForm addComedian={this.addComedian} closeForm={this.closeForm} editMode={this.state.editMode} comedianToEdit={this.state.comedianToEdit} updateComedian={this.updateComedian} />}
-      <div className="comedianContainer row m-2 d-flex justify-content-around">{this.state.comedians.map((comedian) => <SingleComedian key={comedian.id} comedian={comedian} setEditMode={this.setEditMode} setComedianToEdit={this.setComedianToEdit} />)}</div>
+      <div className="comedianContainer row m-2 d-flex justify-content-around">{this.state.comedians.map((comedian) => <SingleComedian key={comedian.id} comedian={comedian} setEditMode={this.setEditMode} setComedianToEdit={this.setComedianToEdit} deleteComedian={this.deleteComedian} />)}</div>
         </div>
     );
   }
