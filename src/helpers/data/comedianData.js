@@ -26,4 +26,11 @@ const saveComedian = (comedianInfo) => axios.post(`${baseUrl}/comedians.json`, c
 
 const updateComedian = (comedianId, newComedianInfo) => axios.put(`${baseUrl}/comedians/${comedianId}.json`, newComedianInfo);
 
-export default { getComediansByUid, saveComedian, updateComedian };
+const deleteComedian = (comedianId) => axios.delete(`${baseUrl}/comedians/${comedianId}.json`);
+
+export default {
+  getComediansByUid,
+  saveComedian,
+  updateComedian,
+  deleteComedian,
+};
